@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Location } from '../entities/location.entity';
@@ -37,6 +37,8 @@ export class LocationService {
 
         if (sortBy) {
             baseQuery.orderBy(`location.${sortBy}`, sortOrder || 'ASC');
+        } else {
+            baseQuery.orderBy('location.id', 'DESC'); 
         }
 
         if (limit) {
@@ -73,4 +75,15 @@ export class LocationService {
       throw new Error(`Failed to delete location: ${error.message}`);
     }
   }
+
+  async createMultipleLocations(locationsDto: CreateItemDto[]): Promise<void> {
+    try {
+      for (const locationDto of locationsDto) {
+        await this.create(locationDto); 
+      }
+    } catch (error) {
+      throw new InternalServerErrorException('Failed to create multiple locations');
+    }
+  }
+
 }

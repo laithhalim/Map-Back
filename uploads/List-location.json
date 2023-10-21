@@ -1,0 +1,87 @@
+{"locations":[
+    {
+      "name": "Statue of Liberty, New York",
+      "lat": 40.689247,
+      "lng": -74.044502,
+      "notes": "An iconic symbol of freedom and democracy. Gifted by France to the United States."
+    },
+    {
+      "name": "Eiffel Tower, Paris",
+      "lat": 48.858373,
+      "lng": 2.292292,
+      "notes": "An iron tower completed in 1889 as the entrance arch for the 1889 World's Fair."
+    },
+    {
+      "name": "Pyramids of Giza, Egypt",
+      "lat": 29.979235,
+      "lng": 31.134202,
+      "notes": "The last of the original Seven Wonders of the Ancient World still in existence."
+    },
+    {
+      "name": "Taj Mahal, India",
+      "lat": 27.175015,
+      "lng": 78.042155,
+      "notes": "A white marble mausoleum commissioned in 1632 by the Mughal emperor Shah Jahan."
+    },
+    {
+      "name": "Christ the Redeemer, Rio de Janeiro",
+      "lat": -22.951917,
+      "lng": -43.210487,
+      "notes": "A large statue of Jesus Christ that overlooks Rio de Janeiro. Completed in 1931."
+    },
+    {
+      "name": "Great Wall of China",
+      "lat": 40.431908,
+      "lng": 116.570374,
+      "notes": "A series of fortifications made of stone, brick, and other materials. Built to protect Chinese states against raids."
+    },
+    {
+      "name": "Sydney Opera House, Australia",
+      "lat": -33.856784,
+      "lng": 151.215296,
+      "notes": "A multi-venue performing arts centre, one of the 20th century's most distinctive buildings."
+    },
+    {
+      "name": "Machu Picchu, Peru",
+      "lat": -13.163068,
+      "lng": -72.545029,
+      "notes": "An ancient Incan city set high in the Andes Mountains. Often referred to as the 'Lost City of the Incas'."
+    },
+    {
+      "name": "Colosseum, Rome",
+      "lat": 41.890210,
+      "lng": 12.492231,
+      "notes": "An ancient Roman amphitheater known for gladiator contests and other public spectacles."
+    },
+    {
+      "name": "Petra, Jordan",
+      "lat": 30.328454,
+      "lng": 35.444362,
+      "notes": "Historical and archaeological city famous for its rock-cut architecture."
+    },
+    {
+      "name": "Moai Statues, Easter Island",
+      "lat": -27.112723,
+      "lng": -109.349687,
+      "notes": "Monolithic human figures carved by the Rapa Nui people."
+    },
+    {
+      "name": "Angkor Wat, Cambodia",
+      "lat": 13.412469,
+      "lng": 103.866986,
+      "notes": "The largest religious monument in the world, originally constructed as a Hindu temple for the Khmer Empire."
+    },
+    {
+      "name": "Mount Everest, Nepal/Tibet",
+      "lat": 27.988120,
+      "lng": 86.924975,
+      "notes": "The highest mountain in the world, part of the Himalaya range."
+    },
+    {
+      "name": "Galápagos Islands, Ecuador",
+      "lat": -0.383361,
+      "lng": -90.396472,
+      "notes": "An archipelago of volcanic islands known for its unique endemic species studied by Charles Darwin."
+    }
+  ]
+}

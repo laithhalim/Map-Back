@@ -96,7 +96,7 @@ export class AuthService {
       }
 
 
-      const user = await this.findById(payload.id); // assuming you have a method to get user by id
+      const user = await this.findById(payload.id);
 
       if (!user) {
         throw new UnauthorizedException(CustomResponse.error('User not found in database', 401));

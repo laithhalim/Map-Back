@@ -28,15 +28,6 @@ export class User {
   @Column({ type: 'varchar', default: RoleEnum[RoleEnum.USER] }) // String representation from RoleEnum
   role: string;
 
-  @Column("text", { array: true, default: () => 'ARRAY[]::text[]' })
-  modulePermission: string[];
-
-  @Column("text", { array: true, default: () => 'ARRAY[]::text[]' })
-  pagePermission: string[];
-
-  @Column("text", { array: true, default: () => 'ARRAY[]::text[]' })
-  actionPermission: string[];
-
   @Column({ nullable: true }) // Optional field
   email: string;
 
@@ -61,10 +52,10 @@ export class User {
   @Column({ nullable: true }) 
   profilePictureUrl: string; 
 
-  @CreateDateColumn({ type: 'timestamp' }) // Automatically set creation timestamp
+  @Column({ type: 'datetime', default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
 
-  @UpdateDateColumn({ type: 'timestamp' }) // Automatically set update timestamp
+  @Column({ type: 'datetime', default: () => 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
 
   @Column({ nullable: true })
