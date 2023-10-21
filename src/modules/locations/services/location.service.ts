@@ -86,4 +86,16 @@ export class LocationService {
     }
   }
 
+  async softDeleteAll(): Promise<void> {
+    try {
+        await this.locationRepository.createQueryBuilder()
+            .update(Location)
+            .set({ isDeleted: true })
+            .execute();
+    } catch (error) {
+        throw new Error(`Failed to mark all locations as deleted: ${error.message}`);
+    }
+}
+
+
 }

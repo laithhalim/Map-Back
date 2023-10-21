@@ -64,5 +64,16 @@ export class LocationController {
     }
   }
 
+  @Get('delete-all')
+  async removeAll(): Promise<any> {
+    try {
+      await this.locationService.softDeleteAll();
+      return CustomResponse.success(true, 'All locations marked as deleted successfully');
+    } catch (err) {
+      throw new BadRequestException(CustomResponse.error('Failed to mark all locations as deleted', 404));
+    }
+  }
+
+
 }
 
